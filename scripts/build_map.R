@@ -15,32 +15,23 @@
 ## Load packages ---------------------------------------------------------------
 library(here)
 library(tidyverse)
-library(janitor)
 library(sf)
 
 ## Load data -------------------------------------------------------------------
-turfs_raw <- read_rds(here("data/raw/TURFcoopsMX.Rda"))
-  
-# PROCESSING ###################################################################
+turfs <- read_sf(here("data/processed/mex_turfs.gpkg"))
+mex <- rnaturalearth::ne_countries(country = "Mexico")
 
-## Some step -------------------------------------------------------------------
-turfs_clean <- turfs_raw |>
-  clean_names() |> 
-  select(state, turf_id, coop, contains("especie"),
-         eu_rnpa = clave_de_la_unidad_economica,
-         n_species = speciesnum) |> 
-  drop_na(turf_id) |> # Ere says NAs are not actual TURFs
-  st_as_sf() |> 
-  st_transform(crs = "EPSG:4326")
+# VISUALIZE ####################################################################
+
+## Another step ----------------------------------------------------------------
+p <- ggplot() +
+  geom_sf(data = mex, fill = "gray25") +
+  geom_sf(data = turfs, fill = "steelblue") +
+  theme_linedraw()
 
 # EXPORT #######################################################################
 
 
 ## The final step --------------------------------------------------------------  
-write_sf(obj = turfs_clean,
-         dsn = here("data/processed/mex_turfs.gpkg"),
-         delete_dsn = T)
-
-write_rds(x = turfs_clean |> 
-            st_drop_geometry(),
-         file = here("data/processed/mex_turfs.rds"))
+ggsave(plot = p,
+       filename = here("map.png"))
