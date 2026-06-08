@@ -47,5 +47,14 @@ species_lookup <- ere_working %>%
 write_sf(ere_turfs, "data/processed/ere_turfs.gpkg")
 write_csv(species_lookup, "data/processed/species_lookup.csv") #as csv so i can edit and then another script to join them together 
 
+# creating sub_id x species table
 
-
+subid_species <- ere_working %>%
+  st_drop_geometry() %>%
+  pivot_longer(
+    cols = starts_with("especie_objetivo"),
+    names_to = "species_number",
+    values_to = "species"
+  ) %>%
+  drop_na(species, sub_id) %>%
+  select(sub_id, turf_id, coop, state, species)
