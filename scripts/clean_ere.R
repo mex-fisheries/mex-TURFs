@@ -5,6 +5,7 @@ library(here)
 library(tidyverse)
 library(janitor)
 library(sf)
+library(readxl)
 
 #loading ere raw
 ere_raw<-read_rds(here("data/raw/TURFcoopsMX.Rda"))
@@ -58,3 +59,44 @@ subid_species <- ere_working %>%
   ) %>%
   drop_na(species, sub_id) %>%
   select(sub_id, turf_id, coop, state, species)
+
+unique_spp_lookup <- read_excel(
+  "C:/Users/sabir/OneDrive/Desktop/TURF_DATA/species_lookups/unique_species_lookup_edited.xlsx"
+)
+
+subid_species <- subid_species %>%
+  mutate(
+    common_name_spanish = str_trim(str_extract(species, "^[^(]+"))
+  )
+
+#joining
+unique_spp_lookup <- unique_spp_lookup %>%
+  select(
+    common_name_spanish,
+    scientific_name,
+    common_name_english,
+    aphia_id
+  )
+subid_species_joined <- subid_species %>%
+  left_join(
+    unique_spp_lookup,
+    by = "common_name_spanish"
+  )
+
+write_csv(
+  subid_species_joined,
+  "data/processed/subid_species_joined.csv"
+)
+
+ere_species_gpkg <- ere_working %>%
+  left_join(
+    subid_species_joined %>%
+      select(sub_id, species, common_name_spanish, scientific_name, common_name_english, aphia_id),
+    by = "sub_id"
+  )
+
+write_sf(
+  ere_species_gpkg,
+  "data/processed/ere_species_cleaned.gpkg",
+  delete_dsn = TRUE
+)

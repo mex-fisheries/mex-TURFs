@@ -120,7 +120,7 @@ sub_id,turf_id,coop,state,species,common_name_spanish,scientific_name,common_nam
 47_1,MX_C_047,S.C.P.P. LAS BRISAS DE PIJIJIAPAN,CH,CAMARON AZUL (Litopenaeus stylirostris),CAMARON AZUL,Litopenaeus stylirostris,Blue Shrimp,1809211
 47_1,MX_C_047,S.C.P.P. LAS BRISAS DE PIJIJIAPAN,CH,ESCAMA ESTUARINA,ESCAMA ESTUARINA,NA,NA,NA
 60_1,MX_C_060,S.C.P.P. LA CRUZ DE LORETO,JAL,CAMARON DE ESTERO (Penaeus spp.),CAMARON DE ESTERO,Penaeus spp.,Shrimp,106822
-60_1,MX_C_060,S.C.P.P. LA CRUZ DE LORETO,JAL,JAIBA (Callinectes spp),JAIBA,Callinectes spp.,Swimming Crab,107379
+60_1,MX_C_060,S.C.P.P. LA CRUZ DE LORETO,JAL,JAIBA (Callinectes spp),JAIBA,Callinectes spp.,Swimming Crab,106921
 60_1,MX_C_060,S.C.P.P. LA CRUZ DE LORETO,JAL,ESCAMA GENERAL,ESCAMA GENERAL,NA,NA,NA
 66_1,MX_C_066,S.C.P.P. POR LA JUSTICIA SOCIAL,QR,LANGOSTA DEL CARIBE (Panulirus argus),LANGOSTA DEL CARIBE,Panulirus argus,Caribbean Spiny Lobster,382891
 65_1,MX_C_065,S.C.P.P. VANGUARDIA DEL MAR,QR,LANGOSTA DEL CARIBE (Panulirus argus),LANGOSTA DEL CARIBE,Panulirus argus,Caribbean Spiny Lobster,382891
@@ -241,7 +241,7 @@ sub_id,turf_id,coop,state,species,common_name_spanish,scientific_name,common_nam
 211_1,MX_C_211,S.C.P.P. PESCADORES DE CABO ROJO,VER,CAMARON (Penaeus spp.),CAMARON,Penaeus spp.,Shrimp,106822
 199_1,MX_C_199,S.C.P.P. TAMIAHUA,VER,OSTION AMERICANO (Crassostrea virginica),OSTION AMERICANO,Crassostrea virginica,Eastern Osyter,140657
 199_1,MX_C_199,S.C.P.P. TAMIAHUA,VER,CAMARON (Penaeus spp.),CAMARON,Penaeus spp.,Shrimp,106822
-199_1,MX_C_199,S.C.P.P. TAMIAHUA,VER,JAIBA (Callinectes spp),JAIBA,Callinectes spp.,Swimming Crab,107379
+199_1,MX_C_199,S.C.P.P. TAMIAHUA,VER,JAIBA (Callinectes spp),JAIBA,Callinectes spp.,Swimming Crab,106921
 199_1,MX_C_199,S.C.P.P. TAMIAHUA,VER,CANGREJO AZUL (Cardisoma guanhumi),CANGREJO AZUL,Cardisoma guanhumi,Blue Land Crab,422183
 199_1,MX_C_199,S.C.P.P. TAMIAHUA,VER,ESCAMA GENERAL,ESCAMA GENERAL,NA,NA,NA
 198_1,MX_C_198,S.C.P.P. OSTIONEROS DE SALADERO,VER,OSTION,OSTION,Crassostrea,Oyster,138297
@@ -256,14 +256,12 @@ sub_id,turf_id,coop,state,species,common_name_spanish,scientific_name,common_nam
 203_1,MX_C_203,S.C.P.P. PESCADORES DE POTRERO MATA CHAVEZ,VER,ESCAMA ESTUARINA,ESCAMA ESTUARINA,NA,NA,NA
 210_1,MX_C_210,S.C.P.P. MARIA ANTONIETA,VER,ACAMAYA (Macrobrachium spp.),ACAMAYA,Macrobrachium spp.,Freshwater Shrimp,156892
 210_1,MX_C_210,S.C.P.P. MARIA ANTONIETA,VER,LANGOSTINO (Macrobrachium carcinus),LANGOSTINO,Macrobrachium carcinus,Bigclaw River Shrimp,246169
-210_1,MX_C_210,S.C.P.P. MARIA ANTONIETA,VER,JAIBA (Callinectes spp),JAIBA,Callinectes spp.,Swimming Crab,107379
 210_1,MX_C_210,S.C.P.P. MARIA ANTONIETA,VER,ESCAMA ESTUARINA,ESCAMA ESTUARINA,NA,NA,NA
 210_1,MX_C_210,S.C.P.P. MARIA ANTONIETA,VER,CAMARON (Penaeus spp.),CAMARON,Penaeus spp.,Shrimp,106822
 209_1,MX_C_209,S.C.P.P. TAMPICO ALTO,VER,OSTION AMERICANO (Crassostrea virginica),OSTION AMERICANO,Crassostrea virginica,Eastern Osyter,140657
 209_1,MX_C_209,S.C.P.P. TAMPICO ALTO,VER,CAMARON (Penaeus spp.),CAMARON,Penaeus spp.,Shrimp,106822
 209_1,MX_C_209,S.C.P.P. TAMPICO ALTO,VER,ESCAMA ESTUARINA,ESCAMA ESTUARINA,NA,NA,NA
 208_1,MX_C_208,S.C.P.P. LAGUNA DE CHILA,VER,ACAMAYA (Macrobrachium spp.),ACAMAYA,Macrobrachium spp.,Freshwater Shrimp,156892
-208_1,MX_C_208,S.C.P.P. LAGUNA DE CHILA,VER,JAIBA (Callinectes spp),JAIBA,Callinectes spp.,Swimming Crab,107379
 208_1,MX_C_208,S.C.P.P. LAGUNA DE CHILA,VER,CAMARON (Penaeus spp.),CAMARON,Penaeus spp.,Shrimp,106822
 208_1,MX_C_208,S.C.P.P. LAGUNA DE CHILA,VER,ESCAMA ESTUARINA,ESCAMA ESTUARINA,NA,NA,NA
 206_1,MX_C_206,S.C.P.P. UNICA REGIONAL DE PESCADORES DE VILLA CUAHUTEMOC,VER,CAMARON (Penaeus spp.),CAMARON,Penaeus spp.,Shrimp,106822
@@ -273,7 +271,7 @@ sub_id,turf_id,coop,state,species,common_name_spanish,scientific_name,common_nam
 204_1,MX_C_204,S.C.P.P. 21 DE MARZO,VER,ESCAMA ESTUARINA,ESCAMA ESTUARINA,NA,NA,NA
 201_1,MX_C_201,S.C.P.P. PESCADORES UNIDOS DE LA REFORMA,VER,OSTION AMERICANO (Crassostrea virginica),OSTION AMERICANO,Crassostrea virginica,Eastern Osyter,140657
 201_1,MX_C_201,S.C.P.P. PESCADORES UNIDOS DE LA REFORMA,VER,CAMARON (Penaeus spp.),CAMARON,Penaeus spp.,Shrimp,106822
-201_1,MX_C_201,S.C.P.P. PESCADORES UNIDOS DE LA REFORMA,VER,JAIBA (Callinectes spp),JAIBA,Callinectes spp.,Swimming Crab,107379
+201_1,MX_C_201,S.C.P.P. PESCADORES UNIDOS DE LA REFORMA,VER,JAIBA (Callinectes spp),JAIBA,Callinectes spp.,Swimming Crab,106921
 201_1,MX_C_201,S.C.P.P. PESCADORES UNIDOS DE LA REFORMA,VER,CANGREJO AZUL (Cardisoma guanhumi),CANGREJO AZUL,Cardisoma guanhumi,Blue Land Crab,422183
 201_1,MX_C_201,S.C.P.P. PESCADORES UNIDOS DE LA REFORMA,VER,ESCAMA GENERAL,ESCAMA GENERAL,NA,NA,NA
 217_1,MX_C_217,S.C.P.P. PESCADORES UNIDOS DE SAN FELIPE,Y,LANGOSTA DEL CARIBE (Panulirus argus),LANGOSTA DEL CARIBE,Panulirus argus,Caribbean Spiny Lobster,382891
@@ -281,3 +279,7 @@ sub_id,turf_id,coop,state,species,common_name_spanish,scientific_name,common_nam
 215_1,MX_C_215,S.C.P.P. MANUEL CEPEDA PERAZA,Y,LANGOSTA DEL CARIBE (Panulirus argus),LANGOSTA DEL CARIBE,Panulirus argus,Caribbean Spiny Lobster,382891
 214_1,MX_C_214,S.C.P.P. PESCADORES DE RIO LAGARTOS,Y,LANGOSTA DEL CARIBE (Panulirus argus),LANGOSTA DEL CARIBE,Panulirus argus,Caribbean Spiny Lobster,382891
 213_1,MX_C_213,S.C.P.P. PESCADORES DE DZILAM DE BRAVO,Y,LANGOSTA DEL CARIBE (Panulirus argus),LANGOSTA DEL CARIBE,Panulirus argus,Caribbean Spiny Lobster,382891
+208_1,MX_C_208,S.C.P.P. LAGUNA DE CHILA,VER,JAIBA (Callinectes spp),JAIBA,Callinectes rathbunae,Sharptooth Swimming Crab,422039
+208_1,MX_C_208,S.C.P.P. LAGUNA DE CHILA,VER,JAIBA (Callinectes spp),JAIBA,Callinectes sapidus,Blue Crab,107379
+210_1,MX_C_210,S.C.P.P. MARIA ANTONIETA,VER,JAIBA (Callinectes spp),JAIBA,Callinectes rathbunae,Sharptooth Swimming Crab,422039
+210_1,MX_C_210,S.C.P.P. MARIA ANTONIETA,VER,JAIBA (Callinectes spp),JAIBA,Callinectes sapidus,Blue Crab,107379
