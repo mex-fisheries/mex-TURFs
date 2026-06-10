@@ -8,13 +8,13 @@ library(sf)
 library(readxl)
 
 #loading ere raw
-ere_raw<-read_rds(here("data/raw/TURFcoopsMX.Rda"))
+ere_raw <- read_rds(here("data/raw/TURFcoopsMX.Rda"))
 #creating a copy of data
-ere_working<-ere_raw %>% 
+ere_working <- ere_raw %>% 
   clean_names()
 
 #creating smaller dataset with turf ids from ere working
-ere_turfs<-ere_working%>%
+ere_turfs <- ere_working%>%
   select(turf_id, coop, state) %>% 
   drop_na(turf_id)
 
