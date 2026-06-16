@@ -12,6 +12,15 @@ The repository combines two primary data sources:
 The final product is a cleaned geospatial dataset containing standardized species information, including Spanish common names, English common names, scientific names, and WoRMS Aphia IDs.
 
 ---
+The final product is a cleaned geospatial dataset containing standardized species information, including Spanish common names, English common names, scientific names, and WoRMS Aphia IDs.
+
+## TURF Distribution
+
+![](figures/mex_turfs_map.png)
+
+---
+
+## Repository Structure
 
 ## Repository Structure
 
@@ -28,6 +37,8 @@ The `scripts/` folder contains the data-cleaning pipeline:
 - `merge_ere_stuart.R`  
   Identifies overlapping TURFs, replaces duplicated Ere polygons with Stuart polygons where appropriate, and exports the final merged dataset.
 
+- `build_map.R`
+  Creates a map of the cleaned TURF polygons for visualization in the repository README.
 ### Data
 
 The `data/` folder is organized into three subdirectories:
