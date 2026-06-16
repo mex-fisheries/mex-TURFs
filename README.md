@@ -22,8 +22,6 @@ The final product is a cleaned geospatial dataset containing standardized specie
 
 ## Repository Structure
 
-## Repository Structure
-
 ### Scripts
 
 The `scripts/` folder contains the data-cleaning pipeline:
