@@ -1,6 +1,5 @@
-# mex-TURFs
+# mex_TURFs
 
-<<<<<<< HEAD
 ## Overview
 
 This repository contains code and data used to clean, standardize, and merge spatial datasets describing Mexican Territorial Use Rights for Fisheries (TURFs).
