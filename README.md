@@ -1,5 +1,6 @@
 # mex-TURFs
 
+<<<<<<< HEAD
 ## Overview
 
 This repository contains code and data used to clean, standardize, and merge spatial datasets describing Mexican Territorial Use Rights for Fisheries (TURFs).
@@ -163,3 +164,12 @@ Spatial dataset of lobster TURFs in Quintana Roo compiled by Stuart.
 The workflow is documented in the repository `Makefile`.
 
 Running the scripts in the order described above reproduces the intermediate and final outputs.
+=======
+This cleans TURF data, more documentation coming soon
+
+![](map.png)
+
+# Workflow and dependencies
+
+![](dag.png)
+>>>>>>> main
